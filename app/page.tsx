@@ -4,7 +4,6 @@ import MainLayout from "@/components/main-layout"
 import HeroSection from "@/components/work/hero-section"
 import SectionHeader from "@/components/work/section-header"
 import WorkItem from "@/components/work/work-item"
-import TestimonialCard from "@/components/work/testimonial-card"
 import ProjectItem from "@/components/work/project-item"
 import { useGSAP } from "@/hooks/useGSAP"
 

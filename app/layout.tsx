@@ -180,25 +180,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
-        {/* Google Analytics */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=googleanalytics"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-PP', {
-                page_title: document.title,
-                page_location: window.location.href,
-                send_page_view: true
-              });
-            `,
-          }}
-        />
+        
 
       </head>
       <body className={`${bogue.variable} ${saprona.variable}`}>
