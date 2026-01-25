@@ -39,7 +39,7 @@ const Page = () => {
             
             <div className="work-item parallax-slow">
               <WorkItem
-                title={["AI Engineering Intern"]}
+                title={["AI Engineer Intern"]}
                 company="ONPOINT SOFTWARE SERVICES PVT. LTD."
                 companyLogo="/work/ONPOINT-IMG.png"
                 period="Jul 2025 - Dec 2025"
