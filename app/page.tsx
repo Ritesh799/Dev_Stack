@@ -39,6 +39,26 @@ const Page = () => {
             
             <div className="work-item parallax-slow">
               <WorkItem
+                title={["Analyst Trainee - AI & Data"]}
+                company="DELOITTE USI"
+                companyLogo="/work/Deloitte.avif"
+                period="Feb 2026 - Present"
+                type="On Site • Trainee"
+                slug="onpoint"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Work Section */}
+        <section className="mt-12 sm:mt-20 lg:mt-32">
+          
+
+          {/* Work Items */}
+          <div className="space-y-8 sm:space-y-12 lg:space-y-16">
+            
+            <div className="work-item parallax-slow">
+              <WorkItem
                 title={["AI Engineer Intern"]}
                 company="ONPOINT SOFTWARE SERVICES PVT. LTD."
                 companyLogo="/work/ONPOINT-IMG.png"
