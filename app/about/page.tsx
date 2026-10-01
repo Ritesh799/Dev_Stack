@@ -34,7 +34,7 @@ const Page = () => {
       
     },
     {
-      title: "AI/ML Intern",
+      title: "AI Engineer Intern",
       company: "OnPoint Software Services",
       location: "Kolhapur",
       year: "Jul 2025 - Dec 2025",
