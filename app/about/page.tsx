@@ -17,8 +17,8 @@ const Page = () => {
     name: "RITESH PATIL",
     role: "AI/ML Developer",
     description: [
-      `<span class="text-theme">I'm an </span><span class="font-bogue-semibold text-theme">AI/ML Developer</span><span class="text-theme"> specializing in </span><span class="font-bogue-semibold text-theme">Generative AI & LLMs</span><span class="text-theme">.</span>`,
-      `<span class="text-theme">Completed my </span><span class="font-bogue-semibold text-theme">B.Tech in Computer Science & Engineering </span><span class="text-theme"> with specialization in AI-ML.</span>`
+      `<span class="text-theme">I'm an </span><span class="font-bogue-semibold text-theme">AI & Data Engineer</span><span class="text-theme"> specializing in </span><span class="font-bogue-semibold text-theme">Generative AI, LLMs & Agentic AI</span><span class="text-theme">.</span>`,
+      `<span class="text-theme">Currently working at </span><span class="font-bogue-semibold text-theme">Deloitte USI</span><span class="text-theme">, building intelligent solutions with </span><span class="font-bogue-semibold text-theme">LLMs, Multi-Agent Systems & MCP</span><span class="text-theme">.</span>`
     ],
     imageSrc: "/me.jpg",
     imageAlt: "Ritesh Patil's profile picture"
@@ -27,10 +27,17 @@ const Page = () => {
   // Experience data
   const experienceData: ExperienceData[] = [
     {
+      title: "Data Management Engineer 1",
+      company: "Deloitte USI",
+      location: "Hyderabad",
+      year: "Feb 2026 - Present",
+      
+    },
+    {
       title: "AI/ML Intern",
       company: "OnPoint Software Services",
-      location: "Remote",
-      year: "Jul 2025 - Present",
+      location: "Kolhapur",
+      year: "Jul 2025 - Dec 2025",
       
     }
   ]
@@ -41,11 +48,11 @@ const Page = () => {
       title: "Generative AI & LLMs",
       skills: [
         { name: "LangChain", isHighlighted: true },
-        { name: "Google Gemini" },
+        { name: "MCP" },
         { name: "LangGraph" },
-        { name: "Hugging Face" },
-        { name: "RAG (PGVector)" },
-        { name: "Pydantic" }
+        { name: "Pydantic" },
+        { name: "RAG" },
+        { name: "Hugging Face" }
       ]
     },
     {
@@ -86,16 +93,18 @@ const Page = () => {
         { name: "MySQL" },
         { name: "PostgreSQL" },
         { name: "MongoDB" },
-        { name: "PGVector" }
+        { name: "PGVector" },
+        { name: "Neo4j" }
       ]
     },
     {
       title: "Tools & Platforms",
       skills: [
+        { name: "AWS" },
         { name: "Jupyter Notebooks" },
         { name: "Google Colab" },
         { name: "Postman" },
-        { name: "Google Sheets API" }
+        { name: "N8N" }
       ]
     }
   ]
@@ -138,16 +147,15 @@ const Page = () => {
               <div className="about-text-item">
                 <p className="text-base sm:text-lg md:text-xl font-saprona-light text-theme leading-relaxed">
       I&apos;m <span className="font-saprona-semibold text-theme">RITESH PATIL</span>, an <span className="font-saprona-semibold text-theme">AI/ML Developer</span> specializing in
-      <span className="font-saprona-semibold text-theme">Generative AI &amp; LLMs</span>. Completed my <span className="font-saprona-semibold text-theme">B.Tech in Computer Science &amp; Engineering (AI-ML)</span>.
+      <span className="font-saprona-semibold text-theme"> Generative AI &amp; LLMs</span>. Completed my <span className="font-saprona-semibold text-theme">B.Tech in Computer Science &amp; Engineering (AI-ML)</span>.
     </p>
               </div>
 
               <div className="about-text-item">
                 <p className="text-base sm:text-lg md:text-xl font-saprona-light text-theme leading-relaxed">
-                  Based in Kolhapur, India. I build innovative AI-powered applications using <span className="font-saprona-semibold text-theme">Traditional AI / ML Frameworks</span>, 
-                   and modern frameworks like 
-                  <span className="font-saprona-semibold text-theme"> LangChain &amp; LangGraph</span>. I&apos;m passionate about creating 
-                  intelligent solutions that solve real-world problems.
+                  Currently working at <span className="font-saprona-semibold text-theme">Deloitte USI</span> as an <span className="font-saprona-semibold text-theme"> AI &amp; Data Engineer</span>, building <span className="font-saprona-semibold text-theme"> Generative AI &amp; Agentic AI</span> solutions using <span className="font-saprona-semibold text-theme">LLMs, LangChain, LangGraph &amp; MCP</span>. 
+                  I work with technologies like <span className="font-saprona-semibold text-theme">Python, FastAPI, PostgreSQL, pgvector &amp; Neo4j</span> to build intelligent, scalable applications that solve real-world problems. 
+                  
                 </p>
               </div>
 
@@ -195,6 +203,18 @@ const Page = () => {
             </div>
 
             <div className="space-y-4">
+
+              <div className="certification-item">
+                <a 
+                  href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=437422F93A9467CA8A4D60291BC37E8244EEC8BA196C1CEE71233A122076ABF4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base sm:text-lg md:text-xl font-saprona-light text-theme hover:font-saprona-semibold transition-all duration-200 hover:text-accent"
+                >
+                  AWS Cloud Practioner
+                </a>
+              </div>
+
               <div className="certification-item">
                 <a 
                   href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=437422F93A9467CA8A4D60291BC37E8244EEC8BA196C1CEE71233A122076ABF4"
@@ -217,7 +237,7 @@ const Page = () => {
                 </a>
               </div>
               
-              <div className="certification-item">
+              {/*<div className="certification-item">
                 <a 
                   href="https://www.credly.com/badges/62fe2e19-f5df-49a9-b0a4-51d54535e2e3/linked_in?t=s4zag3"
                   target="_blank"
@@ -226,7 +246,7 @@ const Page = () => {
                 >
                   Machine Learning Fundamentals (Alteryx Micro-Credential)
                 </a>
-              </div>
+              </div>*/}
             </div>
           </section>
           

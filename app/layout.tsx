@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+// @ts-expect-error Next.js handles global CSS imports at build time.
 import "./globals.css";
 import { Providers } from "@/components/providers";
 import MainLoader from "@/components/main-loader";
@@ -175,8 +176,8 @@ export default function RootLayout({
         
         {/* DNS Prefetch & Preconnect */}
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
-        <link rel="dns-prefetch" href="//github.com" />
-        <link rel="dns-prefetch" href="//linkedin.com" />
+        <link rel="dns-prefetch" href="https://github.com/Ritesh799" />
+        <link rel="dns-prefetch" href="https://www.linkedin.com/in/riteshpatil2003/" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         

@@ -15,7 +15,7 @@ export default function robots(): MetadataRoute.Robots {
         '/*.xml$',
       ],
     },
-    sitemap: 'https://riteshpatil.me/sitemap.xml',
-    host: 'https://riteshpatil.me',
+    sitemap: 'https://patilritesh.in/sitemap.xml',
+    host: 'https://patilritesh.in',
   }
 }
