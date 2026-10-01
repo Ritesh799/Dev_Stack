@@ -39,12 +39,12 @@ const Page = () => {
             
             <div className="work-item parallax-slow">
               <WorkItem
-                title={["Analyst Trainee - AI & Data"]}
+                title={["Analyst - AI & Data"]}
                 company="DELOITTE USI"
-                companyLogo="/work/Deloitte.avif"
+                companyLogo="/work/Deloitte.jpg"
                 period="Feb 2026 - Present"
-                type="On Site • Trainee"
-                slug="onpoint"
+                type="Data management Enginner 1 📍 Hyderabad"
+                slug="Deloitte"
               />
             </div>
           </div>
@@ -63,7 +63,7 @@ const Page = () => {
                 company="ONPOINT SOFTWARE SERVICES PVT. LTD."
                 companyLogo="/work/ONPOINT-IMG.png"
                 period="Jul 2025 - Dec 2025"
-                type="On Site • Intern"
+                type="Intern 📍 Kolhapur"
                 slug="onpoint"
               />
             </div>
